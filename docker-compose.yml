@@ -1,0 +1,13 @@
+version: "3"
+services:
+  node_app:
+    build:
+      context: ./node_app
+    ports:
+      - "3001:3001"
+
+  react_app:
+    build:
+      context: ./react_app
+    ports:
+      - "3000:3000"
